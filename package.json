@@ -1,0 +1,20 @@
+{
+  "name": "cron-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cron": "^1.7.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "node-cron": "^2.0.3"
+  }
+}
