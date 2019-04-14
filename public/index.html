@@ -67,6 +67,7 @@
       .get_the_data {
         display: flex;
         flex-direction: column;
+        padding: 0 8px;
       }
       .get_the_data:hover a {
         color: #fff;
@@ -76,7 +77,7 @@
       .get_the_data a {
         padding: 8px;
         border: 3px solid #01b7ee;
-        margin-bottom: 4px;
+        margin-bottom: 8px;
         border-radius: 0px;
         text-decoration: none;
       }
@@ -87,15 +88,30 @@
       .bottom_text {
         font-size: 0.75rem;
       }
+      .streams {
+        max-width: 1040px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
     <section>
-      <h1>hacks.</h1>
-      <div class="get_the_data">
-        <a href="/login">auth user</a>
-        <a href="/user" id="user_data">get user data</a>
-        <a href="/summaries" id="summaries">get summaries data</a>
+      <!-- <h1>hacks.</h1> -->
+      <div class="streams">
+        <div class="get_the_data">
+          <h4>Wakatime</h4>
+          <a href="/wakatime/login">auth user</a>
+          <a href="/wakatime/user" id="user_data">get user data</a>
+          <a href="/wakatime/summaries" id="summaries">get summaries data</a>
+        </div>
+        <div class="get_the_data">
+          <h4>Firebase</h4>
+          <a href="/firebase/login">auth user</a>
+          <a href="/firebase/user" id="user_data">get user data</a>
+        </div>
       </div>
       <p class="bottom_text">
         Made by

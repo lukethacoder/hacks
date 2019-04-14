@@ -1,7 +1,17 @@
 // login and auth for wakatime
 const axios = require('axios');
 const fs = require('fs');
+const express = require('express');
+const app = express();
+const path = require('path');
+const request = require('request');
+const cookieParser = require('cookie-parser');
+const querystring = require('querystring');
+const globalFunctions = require('./functions');
 
+const wakaTimeURL = 'https://wakatime.com/api/v1/';
+
+// Wakatime Data Endpoints
 module.exports = {
   main: function(AuthObj) {
     console.log(AuthObj);
@@ -10,7 +20,7 @@ module.exports = {
     console.log('HelperWakatime.userData()');
     axios({
       method: 'get',
-      url: 'https://wakatime.com/api/v1/users/current',
+      url: `${wakaTimeURL}users/current`,
       responseType: 'json',
       params: {
         client_id: AuthObj.client_id,
@@ -68,14 +78,9 @@ module.exports = {
     const start_date = `${lastWeekSplit.year}-${lastWeekSplit.month}-${lastWeekSplit.day}`;
     const end_date = `${todaySplit.year}-${todaySplit.month}-${todaySplit.day}`;
 
-    console.log('lastWeekSplit', lastWeekSplit);
-    console.log('todaySplit', todaySplit);
-
-    console.log('start_date', start_date);
-    console.log('end_date', end_date);
     axios({
       method: 'get',
-      url: 'https://wakatime.com/api/v1/users/current/summaries',
+      url: `${wakaTimeURL}users/current/summaries`,
       responseType: 'json',
       params: {
         client_id: AuthObj.client_id,
