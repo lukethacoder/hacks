@@ -1,4 +1,4 @@
-# hacks
+# Wakatime API Express oAuth feat. Slack & Node-cron
 
 This repo provides a basic understanding of oAuth, specifically with the WakaTimeAPI.
 
@@ -44,3 +44,5 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/1234/1234
 ## Run
 
 `npm start`
+
+open in browser at the `PORT` defined in the `env.` [localhost:2345](http//:localhost:2345)
