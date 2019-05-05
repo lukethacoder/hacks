@@ -1,6 +1,10 @@
 # hacks
 
-Run cron jobs using NodeJS
+This repo provides a basic understanding of oAuth, specifically with the WakaTimeAPI.
+
+The express server handles authentication and creating files of response data (`test_data/`)
+
+Concepts of node-cron and slack webhooks are also touched on.
 
 ## Install
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>hacks.</title>
+    <title>oAuth / wakatime / node-cron / slack.</title>
     <meta name="author" content="lukesecomb.digital" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" />
     <style>
@@ -82,7 +82,6 @@
         text-decoration: none;
       }
       .get_the_data a:hover {
-        border-radius: 8px;
         opacity: 1;
       }
       .bottom_text {
@@ -91,8 +90,7 @@
       .streams {
         max-width: 1040px;
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
         justify-content: center;
       }
     </style>
@@ -107,16 +105,11 @@
           <a href="/wakatime/user" id="user_data">get user data</a>
           <a href="/wakatime/summaries" id="summaries">get summaries data</a>
         </div>
-        <div class="get_the_data">
-          <h4>Firebase</h4>
-          <a href="/firebase/login">auth user</a>
-          <a href="/firebase/user" id="user_data">get user data</a>
-        </div>
       </div>
       <p class="bottom_text">
-        Made by
-        <a href="https://lukesecomb.digital" target="_blank">Luke Secomb</a> |
-        <a class="" href="https://github.com/lukethacoder/hacks">repo</a>
+        <a class="" href="https://github.com/lukethacoder/wakatime-api-express-oauth-slack"
+          >Github</a
+        >
       </p>
     </section>
   </body>
